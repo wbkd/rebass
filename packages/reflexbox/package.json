@@ -15,7 +15,7 @@
     "style"
   ],
   "scripts": {
-    "prepare": "babel src -d dist && yarn styled-components",
+    "prepare": "npm install && babel src -d dist && yarn styled-components",
     "styled-components": "NODE_ENV=styled babel src -d styled-components"
   },
   "dependencies": {
