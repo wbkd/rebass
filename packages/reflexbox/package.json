@@ -15,7 +15,7 @@
     "style"
   ],
   "scripts": {
-    "prepare": "npm install && babel src -d dist && yarn styled-components",
+    "prepare": "babel src -d dist && yarn styled-components",
     "styled-components": "NODE_ENV=styled babel src -d styled-components"
   },
   "dependencies": {
@@ -23,7 +23,8 @@
     "@emotion/styled": "^10.0.0",
     "@styled-system/css": "^5.0.0",
     "@styled-system/should-forward-prop": "^5.0.0",
-    "styled-system": "^5.0.0"
+    "styled-system": "^5.0.0",
+    "babel-plugin-transform-rename-import": "^2.3.0"
   },
   "peerDependencies": {
     "react": "^16.8.6"
@@ -31,8 +32,5 @@
   "author": "Brent Jackson",
   "license": "MIT",
   "repository": "rebassjs/rebass",
-  "devDependencies": {
-    "babel-plugin-transform-rename-import": "^2.3.0"
-  },
   "gitHead": "f0f01843e9fb63ca69112d7e97a1451b27ee9e6c"
 }
